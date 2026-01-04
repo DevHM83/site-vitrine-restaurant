@@ -1,8 +1,7 @@
 # 🌍 Saveurs du Monde – Site Vitrine
 *Un voyage culinaire à travers l'Italie, l'Algérie, le Sénégal, le Mexique, l'Inde et le Japon.*
 
-🔗 **[Voir le site en ligne](#)** *(Remplace par ton lien GitHub Pages après déploiement)*
-
+🔗 **[Voir le site en ligne](#)**
 ---
 
 ## 📌 Table des matières
