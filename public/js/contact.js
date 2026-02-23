@@ -1,20 +1,43 @@
 const form = document.getElementById("contactForm");
 
-const handleSubmit = (event) => {
+const handleSubmit = async (event) => {
   event.preventDefault();
 
   // On récupere les données du formulaire
   const formData = new FormData(form);
   const data = Object.fromEntries(formData.entries());
 
-  // Puis on les vérifie
+  // On selectionne le bouton pour pouvoir changer le texte
+  const formButton = document.querySelector(".btn");
+
+  // On vérifie les données
   if (!validateForm(data)) {
     return;
   }
 
+  // On change le texte du bouton après que les données soient validées
+  formButton.classList.add("is-loading");
+  formButton.disabled = true;
+  formButton.textContent = "Envoi en cours...";
+
   // Si tout va bien
   console.log("Données prêtes à l'envoi :", data);
-  showSuccessMessage(data.name);
+
+  // Pas d'envoi réel ici
+  /* setTimeout(() => showSuccessMessage(data.name), 1500); */
+
+  // Envoi d'un email grâce à EmailJs
+  try {
+    await emailjs.send("service_82inqaf", "template_yw0vkps", data);
+    showSuccessMessage(data.name);
+  } catch (error) {
+    console.error("Erreur lors de l'envoi :", error);
+    alert("Désolé, une erreur technique est survenue.");
+    // On redonne la main à l'utilisateur
+    formButton.disabled = false;
+    formButton.classList.remove("is-loading");
+    formButton.textContent = "Réessayer";
+  }
 };
 
 form.addEventListener("submit", handleSubmit);
