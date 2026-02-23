@@ -57,7 +57,7 @@ header {
   box-shadow: var(--box-shadow);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1100;
   padding: 1rem 0;
 }
 
@@ -376,14 +376,8 @@ header .container {
 }
 
 #map {
-  height: 400px;
-  background: #ddd;
+  height: 300px;
   border-radius: var(--border-radius);
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--secondary-color);
 }
 
 /* ===== PIED DE PAGE ===== */
