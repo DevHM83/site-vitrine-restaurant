@@ -93,7 +93,8 @@ header .container {
 
 /* ===== SECTION HERO (ACCUEIL) ===== */
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/hero-bg.jpg");
   background-position: center;
   background-size: cover;
@@ -326,6 +327,23 @@ header .container {
 .form-group textarea {
   height: 120px;
   resize: vertical;
+}
+
+.form-success-card {
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+
+  p {
+    margin-bottom: 1rem;
+  }
 }
 
 .contact-info {
