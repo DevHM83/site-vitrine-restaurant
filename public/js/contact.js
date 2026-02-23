@@ -82,3 +82,17 @@ function showSuccessMessage(userName) {
         </div>
     `;
 }
+
+// Utilisation de Leaflet pour afficher une carte
+const map = L.map("map").setView([48.8832, 2.3673], 13);
+
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 19,
+  attribution:
+    '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+}).addTo(map);
+
+L.marker([48.8832, 2.3673])
+  .addTo(map)
+  .bindPopup("Saveurs du Monde")
+  .openPopup();
