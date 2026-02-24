@@ -2,6 +2,7 @@ export const dishes = [
   {
     name: "Lasagnes à la bolognaise",
     country: "Italie",
+    flag: "🇮🇹",
     ingredients: "Pâtes, Viande Hachée, Sauce Béchamel",
     description:
       "Pâtes feuilletées, sauce bolognaise (viande hachée, tomates), béchamel et parmesan. Servi avec une salade verte.",
@@ -11,6 +12,7 @@ export const dishes = [
   {
     name: "Couscous royal",
     country: "Algérie",
+    flag: "🇩🇿",
     ingredients: "Semoule, Légumes, Merguez",
     description:
       "Semoule fine, légumes (carottes, courgettes, navets), merguez, poulet et boulette de viande. Accompagné de sauce piquante.",
@@ -20,6 +22,7 @@ export const dishes = [
   {
     name: "Thiéboudienne",
     country: "Sénégal",
+    flag: "🇸🇳",
     ingredients: "Riz, Poisson, Sauce Tomate",
     description:
       "Riz cuit avec du poisson frais, des légumes (aubergine, chou, carotte) et une sauce tomate épicée. Un classique sénégalais !",
@@ -29,6 +32,7 @@ export const dishes = [
   {
     name: "Tacos al pastor",
     country: "Mexique",
+    flag: "🇲🇽",
     ingredients: "Tortillas, Viande Marinée, Ananas",
     description:
       "Tortillas de maïs, viande de porc marinée, ananas grillé, oignon rouge et coriandre. Servi avec une sauce verte ou rouge.",
@@ -38,6 +42,7 @@ export const dishes = [
   {
     name: "Butter chicken",
     country: "Inde",
+    flag: "🇮🇳",
     ingredients: "Poulet, Sauce Tomate, Epices",
     description:
       "Poulet mariné dans du yaourt et des épices, cuit au four puis mijoté dans une sauce tomate crémeuse. Servi avec du riz basmati.",
@@ -47,6 +52,7 @@ export const dishes = [
   {
     name: "Ramen tonkotsu",
     country: "Japon",
+    flag: "🇯🇵",
     ingredients: "Nouilles, Bouillon de Porc, Oeuf Mariné",
     description:
       "Nouilles fraîches dans un bouillon de porc riche, accompagné de tranches de porc, œuf mariné, pousses de bambou et algues nori.",

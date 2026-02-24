@@ -12,7 +12,7 @@ dishes.forEach((dish) => {
       class="menu-item-image"
     />
     <div class="menu-item-details">
-      <h3>${dish.name}<span class="flag">🇮🇹</span></h3>
+      <h3>${dish.name}<span class="flag">${dish.flag}</span></h3>
       <p class="description">
         ${dish.description}
       </p>
