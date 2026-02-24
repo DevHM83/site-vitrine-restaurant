@@ -77,7 +77,7 @@ function showSuccessMessage(userName) {
   container.innerHTML = `
         <div class="form-success-card">
             <h3>Merci ${userName} !</h3>
-            <p>Votre demande de réservation a bien été transmise au restaurant.</p>
+            <p>Votre demande a bien été transmise au restaurant.</p>
             <button onclick="window.location.reload()" class="btn">Retour</button>
         </div>
     `;
