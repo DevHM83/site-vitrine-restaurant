@@ -20,7 +20,19 @@
     <header>
       <div class="container">
         <h1 class="logo">Saveurs du Monde</h1>
-        <nav>
+        <button class="burger-btn" popovertarget="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="main-nav" popover>
+          <button
+            class="close-btn"
+            popovertarget="main-nav"
+            popovertargetaction="hide"
+          >
+            ×
+          </button>
           <ul class="nav-links">
             <li><a href="index.html" class="active">Accueil</a></li>
             <li><a href="menu.html">Menu</a></li>

@@ -20,7 +20,20 @@
     <header>
       <div class="container">
         <h1 class="logo">Saveurs du Monde</h1>
-        <nav>
+        <!-- J'utilise ici l'attribut HTML Popover qui me permet de créer un menu burger sans utiliser JavaScript. --- https://developer.mozilla.org/en-US/docs/Web/API/Popover_API --- -->
+        <button class="burger-btn" popovertarget="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="main-nav" popover>
+          <button
+            class="close-btn"
+            popovertarget="main-nav"
+            popovertargetaction="hide"
+          >
+            ×
+          </button>
           <ul class="nav-links">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="menu.html" class="active">Menu</a></li>
