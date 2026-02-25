@@ -2,7 +2,7 @@
 
 _Un voyage culinaire à travers l'Italie, l'Algérie, le Sénégal, le Mexique, l'Inde et le Japon._
 
-<!-- 🔗 **[Voir le site en ligne](#)** _(Remplace par ton lien GitHub Pages après déploiement)_
+<!-- 🔗 **[Voir le site en ligne](#)** 
  -->
 
 ---
